@@ -5,10 +5,10 @@ module.exports = [
     birthday: '2017-11-11',
     favoriteFood: 'Chicken',
     picUrl:
-      'http://www.dogbreedslist.info/uploads/allimg/dog-pictures/Rottweiler-3.jpg',
+      'https://www.dogbreedslist.info/uploads/dog-pictures/rottweiler-2.jpg',
     price: 9.99,
     picUrlSq:
-      'http://www.dogbreedplus.com/dog_breeds/images/cute-rottweiler-puppy.jpg',
+      'https://www.dogbreedslist.info/uploads/dog-pictures/rottweiler-2.jpg',
     description:
       "Rex is a dog and he's a good dog who loves to play and hang out with his owners. He also likes to nap and enjoys eating dog food",
   },
@@ -17,10 +17,11 @@ module.exports = [
     species: 'Greyhound',
     birthday: '2008-11-11',
     favoriteFood: 'Liver',
-    picUrl: 'http://www.gpamass.com/s/img/emotionheader713297504.jpg',
+    picUrl:
+      'https://www.dogbreedslist.info/uploads/dog-pictures/greyhound-2.jpg',
     price: 9.99,
     picUrlSq:
-      'https://www.collinsdictionary.com/images/thumb/greyhound_21701074_250.jpg',
+      'https://www.dogbreedslist.info/uploads/dog-pictures/greyhound-2.jpg',
     description:
       "Fido is a dog and he's a good dog who loves to play and hang out with his owners. He also likes to nap and enjoys eating dog food",
   },
@@ -30,10 +31,10 @@ module.exports = [
     birthday: '2008-11-11',
     favoriteFood: 'Beef',
     picUrl:
-      'https://www.pocketpitbull.com/wp-content/uploads/2017/03/blue-staffy-pitbull-370x208.jpg',
+      'https://www.dogbreedslist.info/uploads/dog-pictures/american-pit-bull-terrier-2.jpg',
     price: 9.99,
     picUrlSq:
-      'http://www.vrcpitbull.com/wp-content/uploads/2011/02/VAMPVAMP%E2%80%A2.jpg',
+      'https://www.dogbreedslist.info/uploads/dog-pictures/american-pit-bull-terrier-2.jpg',
     description:
       "Rolfe is a dog and he's a good dog who loves to play and hang out with his owners. He also likes to nap and enjoys eating dog food",
   },
@@ -43,9 +44,9 @@ module.exports = [
     birthday: '2008-11-11',
     favoriteFood: 'Fish',
     picUrl:
-      'http://www.dogbreedslist.info/uploads/allimg/dog-pictures/West-Highland-White-Terrier-2.jpg',
+      'https://www.dogbreedslist.info/uploads/dog-pictures/west-highland-white-terrier-2.jpg',
     picUrlSq:
-      'https://upload.wikimedia.org/wikipedia/commons/2/2c/West_Highland_White_Terrier_Krakow.jpg',
+      'https://www.dogbreedslist.info/uploads/dog-pictures/west-highland-white-terrier-2.jpg',
     description:
       "Princhi is a dog and he's a good dog who loves to play and hang out with his owners. He also likes to nap and enjoys eating dog food",
   },
@@ -54,31 +55,37 @@ module.exports = [
     species: 'Poodle',
     birthday: '2008-11-11',
     favoriteFood: 'Chicken',
-    picUrl: 'https://i.ytimg.com/vi/-57vwuw_aY8/maxresdefault.jpg',
+    picUrl:
+      'https://www.dogbreedslist.info/uploads/dog-pictures/poodle-2-3.jpg',
     price: 9.99,
-    picUrlSq: 'http://www.caninest.com/images/black-poodle.jpg',
+    picUrlSq:
+      'https://www.dogbreedslist.info/uploads/dog-pictures/poodle-2-3.jpg',
     description:
       "Mr. Fluffles is a dog and he's a good dog who loves to play and hang out with his owners. He also likes to nap and enjoys eating dog food",
   },
   {
     name: "Santa's Little Helper",
-    species: 'Mixed',
+    species: 'Bernese Mountain Dog',
     birthday: '2008-11-11',
     favoriteFood: 'Pork',
-    picUrl: 'http://via.placeholder.com/350x150',
+    picUrl:
+      'https://www.dogbreedslist.info/uploads/dog-pictures/bernese-mountain-dog-2.jpg',
     price: 9.99,
-    picUrlSq: 'http://via.placeholder.com/250x250',
+    picUrlSq:
+      'https://www.dogbreedslist.info/uploads/dog-pictures/bernese-mountain-dog-2.jpg',
     description:
       "Santa's Little Helper is a dog and he's a good dog who loves to play and hang out with his owners. He also likes to nap and enjoys eating dog food",
   },
   {
     name: 'Alf',
-    species: 'Alien',
+    species: 'Afghan Hound',
     birthday: '2008-11-11',
     favoriteFood: 'Cats',
-    picUrl: 'http://via.placeholder.com/350x150',
+    picUrl:
+      'https://www.dogbreedslist.info/uploads/dog-pictures/afghan-hound-2.jpg',
     price: 59.99,
-    picUrlSq: 'http://via.placeholder.com/250x250',
+    picUrlSq:
+      'https://www.dogbreedslist.info/uploads/dog-pictures/afghan-hound-2.jpg',
     description:
       "Alf is an alien and he's a good alien who loves to play and hang out with his owners. He also likes to nap and enjoys eating cats",
   },
@@ -87,9 +94,11 @@ module.exports = [
     species: 'Mastiff',
     birthday: '2008-11-11',
     favoriteFood: 'Dragon',
-    picUrl: 'http://via.placeholder.com/350x150',
+    picUrl:
+      'https://www.dogbreedslist.info/uploads/dog-pictures/mastiff-2.jpg',
     price: 9.99,
-    picUrlSq: 'http://via.placeholder.com/250x250',
+    picUrlSq:
+      'https://www.dogbreedslist.info/uploads/dog-pictures/mastiff-2.jpg',
     description:
       "Bubba is a dog and he's a good dog who loves to play and hang out with his owners. He also likes to nap and enjoys eating dog food",
   },
