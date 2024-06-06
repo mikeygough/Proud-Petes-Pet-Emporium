@@ -1,25 +1,39 @@
-// alert('hello');
 if (document.querySelector('#new-pet')) {
   document
     .querySelector('#new-pet')
     .addEventListener('submit', (e) => {
       e.preventDefault();
-      let pet = {};
-      const inputs = document.querySelectorAll('.form-control');
-      for (const input of inputs) {
-        pet[input.name] = input.value;
+
+      var form = document.getElementById('new-pet');
+      var pet = new FormData(form);
+
+      console.log('Console Logging form:');
+      console.log(form);
+
+      console.log('Console Logging FormData entries:');
+      for (var pair of pet.entries()) {
+        console.log(pair[0] + ': ' + pair[1]);
       }
+
+      console.log('Console Logging pet:');
+      console.log(pet);
+
       axios
-        .post('/pets', pet)
-        .then(function (response) {
-          window.location.replace(`/pets/${response.data._id}`);
+        .post('/pets', pet, {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
         })
-        // Catch
-        .catch(function (error) {
+        .then(function (res) {
+          window.location.replace(`/pets/${res.data.pet._id}`);
+        })
+        .catch(function (err) {
+          console.log('Console Logging error:');
+          console.log(err);
           const alert = document.getElementById('alert');
           alert.classList.add('alert-warning');
           alert.textContent =
-            'Oops, something went wrong saving your pet. Please check your information and try again.';
+            'Oops, something went wrong saving your pet. Please check your information and try again:)';
           alert.style.display = 'block';
           setTimeout(() => {
             alert.style.display = 'none';
