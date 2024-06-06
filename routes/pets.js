@@ -43,11 +43,7 @@ module.exports = (app) => {
 
   // CREATE PET
   app.post('/pets', upload.single('avatar'), (req, res, next) => {
-    console.log(req.file);
-    console.log('in the POST...');
     var pet = new Pet(req.body);
-    console.log('Console logging pet:');
-    console.log(pet);
 
     pet.save(function (err) {
       if (req.file) {
@@ -57,33 +53,24 @@ module.exports = (app) => {
           {},
           function (err, versions, meta) {
             if (err) {
-              console.log('Image Upload Error', err);
               return res.status(400).send({ err: err });
             }
 
             // Pop off the -square and -standard and just use the one URL to grab the image
             versions.forEach(function (image) {
-              console.log('Console logging image');
-              console.log(image);
               var urlArray = image.url.split('-');
               urlArray.pop();
               var url = urlArray.join('-');
               pet.avatarUrl = url;
               pet.save();
             });
-            console.log('File Saved!');
             res.send({ pet: pet });
           }
         );
       } else {
         res.send({ pet: pet });
-        console.log('Console logging req:');
-        console.log(req);
       }
     });
-
-    console.log('Console logging req.file:');
-    console.log(req.file);
   });
 
   // SHOW PET

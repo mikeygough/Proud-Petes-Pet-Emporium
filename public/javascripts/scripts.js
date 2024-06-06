@@ -7,17 +7,6 @@ if (document.querySelector('#new-pet')) {
       var form = document.getElementById('new-pet');
       var pet = new FormData(form);
 
-      console.log('Console Logging form:');
-      console.log(form);
-
-      console.log('Console Logging FormData entries:');
-      for (var pair of pet.entries()) {
-        console.log(pair[0] + ': ' + pair[1]);
-      }
-
-      console.log('Console Logging pet:');
-      console.log(pet);
-
       axios
         .post('/pets', pet, {
           headers: {
@@ -28,8 +17,6 @@ if (document.querySelector('#new-pet')) {
           window.location.replace(`/pets/${res.data.pet._id}`);
         })
         .catch(function (err) {
-          console.log('Console Logging error:');
-          console.log(err);
           const alert = document.getElementById('alert');
           alert.classList.add('alert-warning');
           alert.textContent =
