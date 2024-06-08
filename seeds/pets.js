@@ -45,6 +45,7 @@ module.exports = [
     favoriteFood: 'Fish',
     picUrl:
       'https://www.dogbreedslist.info/uploads/dog-pictures/west-highland-white-terrier-2.jpg',
+    price: 9.99,
     picUrlSq:
       'https://www.dogbreedslist.info/uploads/dog-pictures/west-highland-white-terrier-2.jpg',
     description:
